@@ -116,7 +116,7 @@ request UpdateMap{
 
 	posters_input:  DTM_LABEL_POSTER;
 
-    codel_main:         arianeUpdateMaphMain;
+    codel_main:         arianeUpdateMapMain;
     fail_reports:       CANNOT_READ_POSTER, CANNOT_UPDATE_NAV_GRAPH ;
     interrupt_activity: all;
 };

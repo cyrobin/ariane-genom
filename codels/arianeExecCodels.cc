@@ -271,7 +271,7 @@ arianeFindPathMain(GEN_POINT_2D *_goal, int *report)
 /* arianeUpdateMaphMain  -  codel EXEC of UpdateMap
    Returns:  EXEC END ETHER FAIL ZOMBIE */
 ACTIVITY_EVENT
-arianeUpdateMaphMain(int *report)
+arianeUpdateMapMain(int *report)
 {//{{{
   struct timeval tv0, tv1;
 
