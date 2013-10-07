@@ -247,8 +247,8 @@ arianeFindPathMain(GEN_POINT_2D *_goal, int *report)
         ++it)
   {
     SDI_F->path.points[SDI_F->path.nbPts] = from_gladys_point( *it );
-    SDI_F->path.nbPts++;
-    std::cerr   << "[ariane] ----waypoint #" << SDI_F->path.nbPts++ 
+    //SDI_F->path.nbPts++;
+    std::cerr   << "[ariane] ----waypoint #" << SDI_F->path.nbPts++
                 << " = (" << (*it)[0]<< "," << (*it)[1] 
                 <<")"<<std::endl;
   }
