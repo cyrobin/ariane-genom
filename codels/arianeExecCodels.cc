@@ -226,7 +226,12 @@ arianeFindPathMain(GEN_POINT_2D *_goal, int *report)
   gladys::path_t path = ariadne->plan( start, goal );
   gettimeofday(&tv1, NULL);
 
-  //TODO handle error in ariane
+  // handle errors in ariane
+  if ( path.empty() ) {
+    std::cerr << "#EEE# ariane : no path found :'( " << std::endl;
+    (*report) = S_ariane_NO_PATH;
+    return ETHER;
+  }
 
   // From here, there should be a valid plan
   std::cerr << "[ariane] Waypoints  computed (" 

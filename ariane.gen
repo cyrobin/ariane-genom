@@ -105,7 +105,7 @@ request FindPath{
 	posters_input:  POM_POS, DTM_LABEL_POSTER;
 
     codel_main:         arianeFindPathMain;
-    fail_reports:       UNEXPECTED_DATA, CANNOT_READ_POSTER, CANNOT_UPDATE_POSTER;
+    fail_reports:       UNEXPECTED_DATA, CANNOT_READ_POSTER, CANNOT_UPDATE_POSTER, NO_PATH;
     interrupt_activity: all;
 };
 
